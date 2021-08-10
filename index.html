@@ -1,0 +1,52 @@
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Ping Pong</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+     
+        <link rel="stylesheet" href="style.css">
+        <script src="https://unpkg.com/ml5@0.4.3/dist/ml5.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.0.0/p5.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.0.0/addons/p5.sound.min.js"></script>   
+
+    </head>
+    <body background="https://i.pinimg.com/originals/fe/a3/02/fea302511e762f476605676fd36389f0.jpg">
+<center>
+    <h1 style="width:100%; height:50px; font-size:xx-large;" class="btn btn-info">AI PING PONG</h1>
+   
+    <button class="btn btn-primary" data-toggle="modal" data-target="#my-modal">Instructions</button>
+    <br>
+    <br>
+    <button class="btn btn-success" onclick="play()">Play</button>
+    <button class="btn btn-info" onclick="restart()">Restart</button>
+    <br>
+    <br>
+    <button id="status" class="btn btn-primary">Status</button>
+    <br>
+    <br>
+    <div id="canvas_holder"></div>
+    <div id="my-modal" class="modal fade">
+        <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button class="close" data-dismiss="modal">&times;</button>
+                <h4>Instructions</h4>
+             </div>
+             <div class="modal-body">
+                <p class="text-muted">1. Fix your device screen straight</p>
+                <p class="text-muted">2. Move yourself approximately 3-4 feet away from the laptop </p>
+                <p class="text-muted">3. Move your right wrist in an ascending and decending manner, a red dot should appear on your right wrist</p>
+                <p class="text-muted">4. The red paddle is yours, press "start" to play</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="footer">Created by-Alysha Sharma</div>
+</center>
+        <script src="main.js"></script>
+    </body>
+</html>
